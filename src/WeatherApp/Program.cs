@@ -55,7 +55,7 @@ namespace WeatherApp
                     Console.WriteLine($"{weatherProvider.GetAggregateMph()}mph");
                     break;
                 case "2":
-                    Console.WriteLine($"KPH: {weatherProvider.GetAggregateKph()}kph");
+                    Console.WriteLine($"{weatherProvider.GetAggregateKph()}kph");
                     break;
                 default:
                     Console.WriteLine($"Invalid wind speed selection '{windOption}'");
