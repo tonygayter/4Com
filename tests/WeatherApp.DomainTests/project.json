@@ -7,7 +7,7 @@
     "NUnit": "3.5.0",
     "WeatherApp.Domain": "1.0.0-*"
   },
-  "testRunner": "nunit",
+
   "frameworks": {
     "net452": {}
   }
