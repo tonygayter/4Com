@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'ping -c 1 127.0.0.1'
+        sh 'npm install'
       }
     }
     stage('Test') {
