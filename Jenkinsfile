@@ -1,20 +1,21 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build') {
-      steps {
-        sh 'npm install'
-      }
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
-    stage('Test') {
-      steps {
-        sh 'ping -c 1 127.0.0.1'
-      }
-    }
-    stage('Deploy') {
-      steps {
-        sh 'ping -c 2 127.0.0.1'
-      }
-    }
-  }
 }
